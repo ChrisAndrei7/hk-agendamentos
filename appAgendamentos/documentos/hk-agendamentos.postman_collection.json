@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "65b105d4-c661-4d07-9c77-350c99603a36",
+		"name": "hk-agendamentos",
+		"description": "Projeto criado para atender a demanda de uma operadora de saúde através de um sistema de agendamento de consultas.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33097875",
+		"_collection_link": "https://winter-desert-869279.postman.co/workspace/bf09e259-9dfb-40ec-823b-a85d2a12f07a/collection/33097875-65b105d4-c661-4d07-9c77-350c99603a36?action=share&source=collection_link&creator=33097875"
+	},
+	"item": [
+		{
+			"name": "Consultar agendamentos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8002/agendamentos",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos"
+					]
+				},
+				"description": "API para consultar pacientes cadastrados, não é necessário informar nada no body."
+			},
+			"response": []
+		},
+		{
+			"name": "Criar agendamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"10122024\",\r\n    \"horario\": \"0900\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"create"
+					]
+				},
+				"description": "API para cadastrar novos pacientes, necessário informar os 4 dados abaixo:\n\n- nome\n    \n- cpf\n    \n- email\n    \n- senha"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar agendamento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"11122024\",\r\n    \"horario\": \"0930\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"update",
+						"1"
+					]
+				},
+				"description": "API para atualizar pacientes cadastrados, necessário informar os 6 dados abaixo:\n\n- id\n    \n- nome\n    \n- cpf\n    \n- email\n    \n- senha"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar agendamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"delete",
+						"1"
+					]
+				},
+				"description": "API para deletar um paciente cadastrado, necessário informar o id do usuário no endpoint."
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar agendamento pelo ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/read/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"read",
+						"1"
+					]
+				},
+				"description": "API para consultar pacientes cadastrados, filtrando pelo id. Necessário informar o id no final do endpoint."
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar agendamento por data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/readdata/10122024",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"readdata",
+						"10122024"
+					]
+				},
+				"description": "API para consultar pacientes cadastrados, filtrando pelo CPF. Necessário informar o CPF no final do endpoint."
+			},
+			"response": []
+		}
+	]
+}
