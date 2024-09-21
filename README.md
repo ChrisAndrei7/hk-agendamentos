@@ -1,7 +1,7 @@
 <h1 align="center"> H&MSystem - Sistema para agendamentos de consultas </h1>
 Bem-vindo ao Sistema para agendamento de consultas da Health&Med! Este projeto está em desenvolvimento como atividade do hackaton para a FIAP, curso Software Architecture.	
 <br/>
-<b>Neste repositório, temos o microsserviço de cadastro dos pacientes</b>
+<b>Neste repositório, temos o microsserviço de cadastro dos agendamentos</b>
 <br/>
 :construction: Projeto em construção :construction:
 <br/>
