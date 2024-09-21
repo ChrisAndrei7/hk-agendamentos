@@ -8,8 +8,8 @@ def step_impl(context):
     context.Agendamento_data = {
         'nomemedico': 'Jose Silverino',
         'nomepaciente': 'Joao da Silva',
-        'data': '01012025',
-        'horario': '1300',
+        'data': '01-01-2025',
+        'horario': '13:00',
     }
 
 @given('que eu tenho os detalhes atualizados do Agendamento')
@@ -17,8 +17,8 @@ def step_impl(context):
     context.updated_Agendamento_data = {
         'nomemedico': 'Jose Silverino',
         'nomepaciente': 'Joao da Silva',
-        'data': '02012025',
-        'horario': '1400',
+        'data': '02-01-2025',
+        'horario': '14:00',
     }
 
 @when('eu faço o cadastro de um Agendamento')
@@ -35,7 +35,7 @@ def step_impl(context):
 
 @when('eu faço a consulta de um Agendamento por data')
 def step_impl(context):
-    context.response = requests.get(f"{BASE_URL}/agendamentos/readdata/02012025")
+    context.response = requests.get(f"{BASE_URL}/agendamentos/readdata/02-01-2025")
 
 @when('eu faço a exclusão de um Agendamento')
 def step_impl(context):

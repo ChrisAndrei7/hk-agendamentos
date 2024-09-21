@@ -35,7 +35,7 @@
 						"agendamentos"
 					]
 				},
-				"description": "API para consultar pacientes cadastrados, não é necessário informar nada no body."
+				"description": "API para consultar agendamentos cadastrados, não é necessário informar nada no body."
 			},
 			"response": []
 		},
@@ -46,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"10122024\",\r\n    \"horario\": \"0900\"\r\n}",
+					"raw": "{\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"10-12-2024\",\r\n    \"horario\": \"09:00\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 						"create"
 					]
 				},
-				"description": "API para cadastrar novos pacientes, necessário informar os 4 dados abaixo:\n\n- nome\n    \n- cpf\n    \n- email\n    \n- senha"
+				"description": "API para cadastrar novos agendamentos, necessário informar os 4 dados abaixo:\n\n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario"
 			},
 			"response": []
 		},
@@ -94,7 +94,7 @@
 						"1"
 					]
 				},
-				"description": "API para atualizar pacientes cadastrados, necessário informar os 6 dados abaixo:\n\n- id\n    \n- nome\n    \n- cpf\n    \n- email\n    \n- senha"
+				"description": "API para atualizar agendamentos cadastrados, necessário informar os 5 dados abaixo:\n\n- id\n    \n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario"
 			},
 			"response": []
 		},
@@ -124,7 +124,7 @@
 						"1"
 					]
 				},
-				"description": "API para deletar um paciente cadastrado, necessário informar o id do usuário no endpoint."
+				"description": "API para deletar um agendamento cadastrado, necessário informar o id do agendamento no endpoint."
 			},
 			"response": []
 		},
@@ -157,7 +157,7 @@
 						"1"
 					]
 				},
-				"description": "API para consultar pacientes cadastrados, filtrando pelo id. Necessário informar o id no final do endpoint."
+				"description": "API para consultar agendamentos cadastrados, filtrando pelo id. Necessário informar o id no final do endpoint."
 			},
 			"response": []
 		},
@@ -179,7 +179,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8002/agendamentos/readdata/10122024",
+					"raw": "localhost:8002/agendamentos/readdata/10-12-2024",
 					"host": [
 						"localhost"
 					],
@@ -187,10 +187,10 @@
 					"path": [
 						"agendamentos",
 						"readdata",
-						"10122024"
+						"10-12-2024"
 					]
 				},
-				"description": "API para consultar pacientes cadastrados, filtrando pelo CPF. Necessário informar o CPF no final do endpoint."
+				"description": "API para consultar agendamentos cadastrados, filtrando pela data. Necessário informar a data no final do endpoint."
 			},
 			"response": []
 		}

@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
             name='Agendamento',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('NomeMedico', models.CharField(max_length=250)),
-                ('NomePaciente', models.CharField(max_length=250)),
-                ('Data', models.CharField(max_length=15)),
-                ('Horario', models.CharField(max_length=15)),
+                ('nomemedico', models.CharField(max_length=250)),
+                ('nomepaciente', models.CharField(max_length=250)),
+                ('data', models.CharField(max_length=15)),
+                ('horario', models.CharField(max_length=15)),
             ],
         ),
     ]
