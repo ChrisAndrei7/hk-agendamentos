@@ -10,6 +10,7 @@ def step_impl(context):
         'nomepaciente': 'Joao da Silva',
         'data': '01-01-2025',
         'horario': '13:00',
+        'email': 'christian_inde@hotmail.com',
     }
 
 @given('que eu tenho os detalhes atualizados do Agendamento')
@@ -19,6 +20,7 @@ def step_impl(context):
         'nomepaciente': 'Joao da Silva',
         'data': '02-01-2025',
         'horario': '14:00',
+        'email': 'christian_inde@hotmail.com',
     }
 
 @when('eu faço o cadastro de um Agendamento')

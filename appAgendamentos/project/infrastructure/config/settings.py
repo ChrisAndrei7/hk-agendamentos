@@ -81,15 +81,14 @@ WSGI_APPLICATION = 'infrastructure.gateway.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('DB_DRIVER','django.db.backends.postgresql'),
-        'USER': os.environ.get('PG_USER','postgres'),
-        'PASSWORD':os.environ.get('PG_PASSWORD','postgres'),
-        'NAME': os.environ.get('PG_DB','postgres'),
-        'PORT': os.environ.get('PG_PORT','5432'),
-        'HOST': os.environ.get('PG_HOST','localhost'), # uses the container if set, otherwise it runs locally
+        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
+        'USER': os.environ.get('PG_USER', 'postgres'),
+        'PASSWORD': os.environ.get('PG_PASSWORD', 'postgres'),
+        'NAME': os.environ.get('PG_DB', 'postgres'),
+        'PORT': os.environ.get('PG_PORT', '5432'),
+        'HOST': os.environ.get('PG_HOST', 'localhost'),  # uses the container if set, otherwise it runs locally
     }
 }
 
@@ -134,3 +133,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email configuration for sending notifications about new appointments
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ehackaton@gmail.com'
+EMAIL_HOST_PASSWORD = 'mlok hdru nqnb wnnq'
+DEFAULT_FROM_EMAIL = 'no-reply@healthmed.com'

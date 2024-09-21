@@ -46,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"10-12-2024\",\r\n    \"horario\": \"09:00\"\r\n}",
+					"raw": "{\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"10-12-2024\",\r\n    \"horario\": \"09:00\",\r\n    \"email\": \"christian_inde@hotmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 						"create"
 					]
 				},
-				"description": "API para cadastrar novos agendamentos, necessário informar os 4 dados abaixo:\n\n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario"
+				"description": "API para cadastrar novos agendamentos, necessário informar os 5 dados abaixo:\n\n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario\n    \n- email"
 			},
 			"response": []
 		},
@@ -75,7 +75,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"2\",\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"11122024\",\r\n    \"horario\": \"0930\"\r\n}",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"nomemedico\": \"Daniel Oliveira\",\r\n    \"nomepaciente\": \"Marta da Silva\",\r\n    \"data\": \"11-12-2024\",\r\n    \"horario\": \"09:30\",\r\n    \"email\": \"christian_inde@hotmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -94,7 +94,7 @@
 						"1"
 					]
 				},
-				"description": "API para atualizar agendamentos cadastrados, necessário informar os 5 dados abaixo:\n\n- id\n    \n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario"
+				"description": "API para atualizar agendamentos cadastrados, necessário informar os 6 dados abaixo:\n\n- id\n    \n- Nome do Médico\n    \n- Nome do Paciente\n    \n- Data\n    \n- Horario\n    \n- email"
 			},
 			"response": []
 		},
