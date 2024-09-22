@@ -5,7 +5,7 @@
 		"description": "Projeto criado para atender a demanda de uma operadora de saúde através de um sistema de agendamento de consultas.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33097875",
-		"_collection_link": "https://winter-desert-869279.postman.co/workspace/bf09e259-9dfb-40ec-823b-a85d2a12f07a/collection/33097875-65b105d4-c661-4d07-9c77-350c99603a36?action=share&source=collection_link&creator=33097875"
+		"_collection_link": "https://winter-desert-869279.postman.co/workspace/My-Workspace~bf09e259-9dfb-40ec-823b-a85d2a12f07a/collection/33097875-65b105d4-c661-4d07-9c77-350c99603a36?action=share&source=collection_link&creator=33097875"
 	},
 	"item": [
 		{
@@ -99,36 +99,6 @@
 			"response": []
 		},
 		{
-			"name": "Deletar agendamento",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/agendamentos/delete/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"agendamentos",
-						"delete",
-						"1"
-					]
-				},
-				"description": "API para deletar um agendamento cadastrado, necessário informar o id do agendamento no endpoint."
-			},
-			"response": []
-		},
-		{
 			"name": "Consultar agendamento pelo ID",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -191,6 +161,36 @@
 					]
 				},
 				"description": "API para consultar agendamentos cadastrados, filtrando pela data. Necessário informar a data no final do endpoint."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar agendamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8002/agendamentos/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"agendamentos",
+						"delete",
+						"1"
+					]
+				},
+				"description": "API para deletar um agendamento cadastrado, necessário informar o id do agendamento no endpoint."
 			},
 			"response": []
 		}
