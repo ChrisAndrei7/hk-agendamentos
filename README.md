@@ -37,9 +37,6 @@ Abaixo, fluxos principais com processo e endpoint desse microsserviço. Para mai
 # :page_with_curl: Collection
 Disponibilizamos uma collection do postman para ajudar na utilização, contendo todas as APIs deste microserviço e com os campos necessários para preenchimento, <b>localizado na pasta appAgendamentos/Documentos com nome "hk-agendamentos.postman_collection".</b>
 
-# :dancer: Padrão Saga - Coreografia
-:construction: Em construção :construction:
-
 # :lock: Relatório RIPD
 Relatório RIPD gerado se encontra junto com todos os outros documentos do projeto dentro do projeto, na pasta pasta **appAgendamentos/Documentos**, com nome **H&MSystem - RIPD**.
 
